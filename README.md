@@ -1,0 +1,1 @@
+# Graphic Design School Website made with Tailwind CSS

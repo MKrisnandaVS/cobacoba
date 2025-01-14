@@ -1,17 +1,5 @@
 {
-  "dependencies": {
-    "tailwindcss": "^3.4.17"
-  },
-  "name": "lmi",
-  "version": "1.0.0",
-  "main": "index.js",
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx tailwindcss -i src/assets/css/style.css -o src/dist/output.css --watch"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "devDependencies": {
+    "tailwindcss": "^3.1.4"
+  }
 }
