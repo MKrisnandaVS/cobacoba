@@ -1,843 +1,486 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Your best place to learn graphic design"
-    />
-    <meta name="theme-color" content="#dc8cdb"/>
-    <title>EduWell - Education</title>
 
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Your best place to learn graphic design" />
+  <meta name="theme-color" content="#dc8cdb" />
+  <title>EduWell - Education</title>
 
-    <!-- Owl Carousel -->
-    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
 
-    <script src="./assets/js/jquery.min.js"></script>
-    <script src="./assets/js/owl.carousel.min.js"></script>
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="./dist/output.css" />
-    <link rel="stylesheet" href="assets/css/custom.css" />
+  <script src="./assets/js/jquery.min.js"></script>
+  <script src="./assets/js/owl.carousel.min.js"></script>
 
-    <!-- CUSTOM JS -->
-    <script src="./assets/js/script.js" defer></script>
-    <script src="./assets/js/accessibility.js" defer></script>
-  </head>
-  <body>
-    <!-- HEADER -->
-    <header class="h-[100px] md:h-[110px] w-full relative z-[999]" id="header">
-      <div
-        class="relative h-full mx-auto px-10 z-50 gradient"
-      >
-        <div
-          class="container xl:px-12 relative mx-auto flex justify-between h-full items-center"
-        >
-          <img
-            src="assets/images/header-bg.png"
-            class="absolute -z-10 left-0 hidden xl:block xl:saturate-150"
-            alt=""
-          />
-          <a href="#home">
-            <img
-              src="assets/images/templatemo-eduwell.png"
-              alt="Home of EduWell School"
-              class="w-28 2xs:w-fit cursor-pointer"
-            />
-          </a>
-          <svg
-            id="dropdown-menu"
-            xmlns="http://www.w3.org/2000/svg"
-            class="menu-icon h-10 w-8 2xs:w-10 block md:hidden text-white cursor-pointer"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            stroke-width="2"
-            role="button"
-            aria-label="open dropdown menu navigation"
-            aria-expanded="false"
-            tabindex="0"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M4 6h36M4 12h8m-8 6h36"
-            />
-          </svg>
-          <nav class="hidden md:block">
-            <ul class="flex items-center">
-              <li
-                class="nav-link"
-                ><a role="button" href="#home" class="p-2">Home</a></li
-              >
-              <li
-                class="nav-link"
-                ><a role="button" href="#services" class="p-2">Services</a></li
-              >
-              <li
-                class="nav-link"
-                ><a role="button" href="#courses" class="p-2">Courses</a></li
-              >
-              <li
-                id="pages"
-                role="button"
-                aria-expanded="false"
-                class="mx-1 lg:mx-4 text-sm lg:text-base text-nav-link-color font-open-sans flex items-center relative"
-                ><a class="p-2 cursor-pointer">Pages</a>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./dist/output.css" />
+  <link rel="stylesheet" href="assets/css/custom.css" />
 
-                <svg
-                  version="1.1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-3 w-3 fill-nav-link-color"
-                  width="768"
-                  height="768"
-                  viewBox="0 0 768 768"
-                  aria-hidden="true"
-                >
-                  <g id="icomoon-ignore"></g>
-                  <path
-                    d="M90 165l294 294 294-294 90 90-384 384-384-384z"
-                  ></path>
-                </svg>
+  <!-- CUSTOM JS -->
+  <script src="./assets/js/script.js" defer></script>
+  <script src="./assets/js/accessibility.js" defer></script>
+</head>
 
-                <ul
-                  id="pages-list"
-                  class="absolute top-10 rounded-[5px] flex-col w-36 transition-all duration-300 overflow-hidden pages-submenu-inactive"
-                >
-                  <li
-                    ><a role="button" href="#" class="pages-dropdown-menu-link"
-                      >About Us</a
-                    ></li
-                  >
-                  <li
-                    ><a role="button" href="#" class="pages-dropdown-menu-link"
-                      >Our Services</a
-                    ></li
-                  >
-                  <li
-                    ><a role="button" href="#" class="pages-dropdown-menu-link"
-                      >Contact Us</a
-                    ></li
-                  >
-                </ul>
-              </li>
-              <li
-                class="nav-link"
-                ><a role="button" href="#testimonials" class="p-2"
-                  >Testimonials</a
-                ></li
-              >
-              <li
-                class="nav-link"
-                ><a role="button" href="#contact" class="p-2">Contact Us</a></li
-              >
-            </ul>
-          </nav>
-        </div>
-      </div>
+<body>
+  <!-- HEADER -->
+  <header class="h-[100px] md:h-[110px] w-full relative z-[999]" id="header">
+    <div class="relative h-full mx-auto px-10 z-50 gradient">
+      <div class="container xl:px-12 relative mx-auto flex justify-between h-full items-center">
+        <img src="assets/images/header-bg.png" class="absolute -z-10 left-0 hidden xl:block xl:saturate-150" alt="" />
+        <a href="#home">
+          <img src="assets/images/templatemo-eduwell.png" alt="Home of EduWell School"
+            class="w-28 2xs:w-fit cursor-pointer" />
+        </a>
+        <svg id="dropdown-menu" xmlns="http://www.w3.org/2000/svg"
+          class="menu-icon h-10 w-8 2xs:w-10 block md:hidden text-white cursor-pointer" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor" stroke-width="2" role="button" aria-label="open dropdown menu navigation"
+          aria-expanded="false" tabindex="0">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h36M4 12h8m-8 6h36" />
+        </svg>
+        <nav class="hidden md:block">
+          <ul class="flex items-center">
+            <li class="nav-link"><a role="button" href="#home" class="p-2">Home</a></li>
+            <li class="nav-link"><a role="button" href="#services" class="p-2">Services</a></li>
+            <li class="nav-link"><a role="button" href="#courses" class="p-2">Courses</a></li>
+            <li id="pages" role="button" aria-expanded="false"
+              class="mx-1 lg:mx-4 text-sm lg:text-base text-nav-link-color font-open-sans flex items-center relative"><a
+                class="p-2 cursor-pointer">Pages</a>
 
-      <!-- DROPDOWN NAVIGATION -->
-      <nav
-        aria-label="dropdown navigation"
-        class="nav px-3 w-full h-0 overflow-hidden md:hidden"
-      >
-        <ul class="max-w-lg mx-auto flex flex-col align-center">
-          <li role="button"
-            ><a href="#home" class="dropdown-menu-link">Home</a></li
-          >
-          <li role="button"
-            ><a href="#services" class="dropdown-menu-link">Services</a></li
-          >
-          <li role="button"
-            ><a href="#courses" class="dropdown-menu-link">Courses</a></li
-          >
-          <li role="" aria-label="open pages submenu dropdow" aria-expanded="false" tabindex="0" class="relative submenu-link">
-            <a class="dropdown-menu-link cursor-pointer"
-              >Pages
-              <svg
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-2 w-2 fill-[#3b566e] absolute top-1/2 -translate-y-1/2 right-8"
-                width="768"
-                height="768"
-                viewBox="0 0 768 768"
-              >
-                <title></title>
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 fill-nav-link-color" width="768"
+                height="768" viewBox="0 0 768 768" aria-hidden="true">
                 <g id="icomoon-ignore"></g>
                 <path d="M90 165l294 294 294-294 90 90-384 384-384-384z"></path>
               </svg>
-            </a>
-          </li>
-          <ul class="submenu h-0 overflow-hidden">
-            <li role="button"><a href="#" class="submenu-dropdown-menu-link">About Us</a></li>
-            <li role="button"
-              ><a href="#" class="submenu-dropdown-menu-link"
-                >Our Services</a
-              ></li
-            >
-            <li role="button"
-              ><a href="#" class="submenu-dropdown-menu-link">Contact Us</a></li
-            >
+
+              <ul id="pages-list"
+                class="absolute top-10 rounded-[5px] flex-col w-36 transition-all duration-300 overflow-hidden pages-submenu-inactive">
+                <li><a role="button" href="#" class="pages-dropdown-menu-link">About Us</a></li>
+                <li><a role="button" href="#" class="pages-dropdown-menu-link">Our Services</a></li>
+                <li><a role="button" href="#" class="pages-dropdown-menu-link">Contact Us</a></li>
+              </ul>
+            </li>
+            <li class="nav-link"><a role="button" href="#testimonials" class="p-2">Testimonials</a></li>
+            <li class="nav-link"><a role="button" href="#contact" class="p-2">Contact Us</a></li>
           </ul>
-          <li role="button"
-            ><a href="#testimonials" class="dropdown-menu-link"
-              >Testimonials</a
-            ></li
-          >
-          <li role="button"
-            ><a href="#contact" class="dropdown-menu-link">Contact Us</a></li
-          >
+        </nav>
+      </div>
+    </div>
+
+    <!-- DROPDOWN NAVIGATION -->
+    <nav aria-label="dropdown navigation" class="nav px-3 w-full h-0 overflow-hidden md:hidden">
+      <ul class="max-w-lg mx-auto flex flex-col align-center">
+        <li role="button"><a href="#home" class="dropdown-menu-link">Home</a></li>
+        <li role="button"><a href="#services" class="dropdown-menu-link">Services</a></li>
+        <li role="button"><a href="#courses" class="dropdown-menu-link">Courses</a></li>
+        <li role="" aria-label="open pages submenu dropdow" aria-expanded="false" tabindex="0"
+          class="relative submenu-link">
+          <a class="dropdown-menu-link cursor-pointer">Pages
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+              class="h-2 w-2 fill-[#3b566e] absolute top-1/2 -translate-y-1/2 right-8" width="768" height="768"
+              viewBox="0 0 768 768">
+              <title></title>
+              <g id="icomoon-ignore"></g>
+              <path d="M90 165l294 294 294-294 90 90-384 384-384-384z"></path>
+            </svg>
+          </a>
+        </li>
+        <ul class="submenu h-0 overflow-hidden">
+          <li role="button"><a href="#" class="submenu-dropdown-menu-link">About Us</a></li>
+          <li role="button"><a href="#" class="submenu-dropdown-menu-link">Our Services</a></li>
+          <li role="button"><a href="#" class="submenu-dropdown-menu-link">Contact Us</a></li>
         </ul>
-      </nav>
-    </header>
+        <li role="button"><a href="#testimonials" class="dropdown-menu-link">Testimonials</a></li>
+        <li role="button"><a href="#contact" class="dropdown-menu-link">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-      <!-- HOME -->
-      <section
-        role="region"
-        aria-label="Welcome to our school"
-        id="home"
-        class="relative pt-20 overflow-x-hidden"
-      >
-        <div class="container lg:grid grid-cols-5 px-4 mx-auto">
-          <div class="text-center lg:text-left lg:pl-10 col-span-2 mb-20 xl:mb-0">
-            <h6 class="text-[17px] font-medium text-[#777777]"
-              >Welcome To Our School</h6
-            >
-            <h1
-              class="font-black leading-tight mt-5 mb-10 max-w-2xl mx-auto home-title"
-              >Best Place To Learn Graphic
-              <span class="text-[#dc8cdb]">Design!</span></h1
-            >
-            <a href="#contact" class="button">Join us now!</a>
+  <main>
+    <!-- HOME -->
+    <section role="region" aria-label="Welcome to our school" id="home" class="relative pt-20 overflow-x-hidden">
+      <div class="container lg:grid grid-cols-5 px-4 mx-auto">
+        <div class="text-center lg:text-left lg:pl-10 col-span-2 mb-20 xl:mb-0">
+          <h6 class="text-[17px] font-medium text-[#777777]">Welcome To Our School</h6>
+          <h1 class="font-black leading-tight mt-5 mb-10 max-w-2xl mx-auto home-title">Best Place To Learn Graphic
+            <span class="text-[#dc8cdb]">Design!</span>
+          </h1>
+          <a href="#contact" class="button">Join us now!</a>
+        </div>
+        <div class="relative lg:ml-20 w-full col-span-3">
+          <img src="assets/images/banner-right-image.png" class="mx-auto px-3 w-full xl:w-4/5 2xl:w-3/5 2xl:mr-24"
+            alt="A student girl holding a book in her arms" />
+          <img src="assets/images/banner-right-dec.png"
+            class="absolute -z-50 right-0 lg:-right-10 top-10 lg:top-5 md:w-3/4 lg:w-max" alt="" />
+        </div>
+      </div>
+      <img src="assets/images/banner-left-dec.png" class="absolute -z-50 top-14" alt="" />
+    </section>
+
+    <!-- SERVICES -->
+    <section role="region" aria-label="services" id="services" class="container mx-auto pt-24">
+      <div class="text-center">
+        <p class="subtitle">Our Services</p>
+        <h2 class="title">Provided <span class="text-[#dc8cdb]">Services</span></h2>
+      </div>
+      <div class="mt-10">
+        <div class="owl-carousel-one owl-carousel owl-theme w-full">
+          <div class="service">
+            <img src="assets/images/service-icon-01.png" class="mx-auto !w-auto" alt="" />
+            <h3 class="service-title">Useful Tricks</h3>
+            <p class="service-description">EduWell is the professional HTML5 template for your school or
+              university websites.</p>
           </div>
-          <div class="relative lg:ml-20 w-full col-span-3">
-            <img
-              src="assets/images/banner-right-image.png"
-              class="mx-auto px-3 w-full xl:w-4/5 2xl:w-3/5 2xl:mr-24"
-              alt="A student girl holding a book in her arms"
-            />
-            <img
-              src="assets/images/banner-right-dec.png"
-              class="absolute -z-50 right-0 lg:-right-10 top-10 lg:top-5 md:w-3/4 lg:w-max"
-              alt=""
-            />
+          <div class="service">
+            <img src="assets/images/service-icon-02.png" class="mx-auto !w-auto" alt="" />
+            <h3 class="service-title">Creative Ideas</h3>
+            <p class="service-description">You can download and use this EduWell Template for your
+              teaching and learning stuffs.</p>
+          </div>
+          <div class="service">
+            <img src="assets/images/service-icon-03.png" class="mx-auto !w-auto" alt="" />
+            <h3 class="service-title">Ready Target</h3>
+            <p class="service-description">Please tell your friends about the best CSS template website
+              that is TemplateMo.</p>
+          </div>
+          <div class="service">
+            <img src="assets/images/service-icon-04.png" class="mx-auto !w-auto" alt="" />
+            <h3 class="service-title">Useful Tricks</h3>
+            <p class="service-description">Aenean bibendum consectetur ex eu porttitor. Pellentesque id
+              ultrices metus.</p>
+          </div>
+          <div class="service">
+            <img src="assets/images/service-icon-01.png" class="mx-auto !w-auto" alt="" />
+            <h3 class="service-title">Useful Tricks</h3>
+            <p class="service-description">EduWell is the professional HTML5 template for your school or
+              university websites.</p>
+          </div>
+          <div class="service">
+            <img src="assets/images/service-icon-02.png" class="mx-auto !w-auto" alt="" />
+            <h3 class="service-title">Creative Ideas</h3>
+            <p class="service-description">You can download and use this EduWell Template for your
+              teaching and learning stuffs.</p>
+          </div>
+          <div class="service">
+            <img src="assets/images/service-icon-03.png" class="mx-auto !w-auto" alt="" />
+            <h3 class="service-title">Ready Target</h3>
+            <p class="service-description">Please tell your friends about the best CSS template website
+              that is TemplateMo.</p>
+          </div>
+          <div class="service">
+            <img src="assets/images/service-icon-04.png" class="mx-auto !w-auto" alt="" />
+            <h3 class="service-title">Useful Tricks</h3>
+            <p class="service-description">Aenean bibendum consectetur ex eu porttitor. Pellentesque id
+              ultrices metus.</p>
+          </div>
+          <div class="service">
+            <img src="assets/images/service-icon-01.png" class="mx-auto !w-auto" alt="" />
+            <h3 class="service-title">Useful Tricks</h3>
+            <p class="service-description">EduWell is the professional HTML5 template for your school or
+              university websites.</p>
+          </div>
+          <div class="service">
+            <img src="assets/images/service-icon-02.png" class="mx-auto !w-auto" alt="" />
+            <h3 class="service-title">Creative Ideas</h3>
+            <p class="service-description">You can download and use this EduWell Template for your
+              teaching and learning stuffs.</p>
+          </div>
+          <div class="service">
+            <img src="assets/images/service-icon-03.png" class="mx-auto !w-auto" alt="" />
+            <h3 class="service-title">Ready Target</h3>
+            <p class="service-description">Please tell your friends about the best CSS template website
+              that is TemplateMo.</p>
+          </div>
+          <div class="service">
+            <img src="assets/images/service-icon-04.png" class="mx-auto !w-auto" alt="" />
+            <h3 class="service-title">Useful Tricks</h3>
+            <p class="service-description">Aenean bibendum consectetur ex eu porttitor. Pellentesque id
+              ultrices metus.</p>
+          </div>
+          <div class="service">
+            <img src="assets/images/service-icon-01.png" class="mx-auto !w-auto" alt="" />
+            <h3 class="service-title">Useful Tricks</h3>
+            <p class="service-description">EduWell is the professional HTML5 template for your school or
+              university websites.</p>
+          </div>
+          <div class="service">
+            <img src="assets/images/service-icon-02.png" class="mx-auto !w-auto" alt="" />
+            <h3 class="service-title">Creative Ideas</h3>
+            <p class="service-description">You can download and use this EduWell Template for your
+              teaching and learning stuffs.</p>
+          </div>
+          <div class="service">
+            <img src="assets/images/service-icon-03.png" class="mx-auto !w-auto" alt="" />
+            <h3 class="service-title">Ready Target</h3>
+            <p class="service-description">Please tell your friends about the best CSS template website
+              that is TemplateMo.</p>
+          </div>
+          <div class="service">
+            <img src="assets/images/service-icon-04.png" class="mx-auto !w-auto" alt="" />
+            <h3 class="service-title">Useful Tricks</h3>
+            <p class="service-description">Aenean bibendum consectetur ex eu porttitor. Pellentesque id
+              ultrices metus.</p>
           </div>
         </div>
-        <img
-          src="assets/images/banner-left-dec.png"
-          class="absolute -z-50 top-14"
-          alt=""
-        />
-      </section>
+      </div>
+    </section>
 
-      <!-- SERVICES -->
-      <section
-        role="region"
-        aria-label="services"
-        id="services"
-        class="container mx-auto pt-24"
-      >
+    <!-- COURSES -->
+    <section role="region" aria-label="courses" id="courses" class="relative pt-24">
+      <img src="assets/images/our-courses-left-dec.png" class="absolute top-0 left-8 -z-50" alt="" />
+      <img src="assets/images/our-courses-right-dec.png" class="absolute top-0 right-8 -z-50" alt="" />
+      <div class="container mx-auto text-center mb-14">
+        <p class="subtitle">Our Courses</p>
+        <h2 class="title">What You Can <span class="text-[#dc8cdb]">Learn</span></h2>
+        <p class="mt-8 px-20">You just think about TemplateMo whenever you need free CSS
+          templates for your business website</p>
+      </div>
+      <div class="container mx-auto lg:flex gap-[100px] items-start">
+        <ul class="flex flex-col gap-10 items-center px-3">
+          <li class="courses-link course-link-active">Web Development</li>
+          <li class="courses-link">Graphic Design</li>
+          <li class="courses-link">Web Design</li>
+          <li class="courses-link">WordPress</li>
+        </ul>
+        <div id="courses">
+          <div class="course transition-all">
+            <div class="relative w-full self-center">
+              <span class="course-price">$128</span>
+              <img src="assets/images/courses-01.jpg" class="rounded-md md:rounded-r-none w-full" alt="" />
+            </div>
+            <div class="course-info">
+              <h4 class="text-xl text-[#111] font-extrabold">Web Development</h4>
+              <p class="course-info-text">Did you know that you can visit
+                <a href="#">TooCSS website</a> for latest listing of HTML
+                templates and a variety of useful templates.
+              </p>
+              <p class="course-info-text">You just need to go and visit that website right now. IF you
+                have any suggestion or comment about this template, you can
+                feel free to go to contact page for our email address.</p>
+              <div class="course-info-div-specifies">
+                <p>36 Hours</p>
+                |
+                <p>4 Weeks</p>
+                |
+                <p>3 Certificates</p>
+              </div>
+              <a href="#" class="text-sm font-medium text-[#dc8cdb] link">Subscribe Course</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROMOTION -->
+    <section role="region" class="py-10 2xl:py-0 my-28 lg:mt-44 bg-cta bg-no-repeat bg-center bg-cover">
+      <div class="container mx-auto py-28 md:py-36 lg:py-24 px-4 flex flex-col lg:flex-row">
+        <div class="w-full mb-10 lg:w-fit lg:mx-10">
+          <img src="assets/images/cta-left-image.png" class="w-full" alt="A breafing meeting in a light office" />
+        </div>
+        <div class="text-white">
+          <p>Get the sale right now!</p>
+          <h4 class="promotion font-black mt-5 xs:leading-[74px]">Up to 50% OFF For 1+ courses</h4>
+          <p class="mt-8 mb-10 text-sm leading-6">Kogi VHS freegan bicycle rights try-hard green juice probably
+            haven't heard of them cliche la croix af chillwave.</p>
+          <a href="#" class="alternative-button">View Courses</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section role="region" aria-label="testimonials" id="testimonials" class="relative pt-24">
+      <img src="assets/images/testimonials-left-dec.png" class="absolute left-0 -top-14 -z-50" alt="" />
+      <img src="assets/images/testimonials-right-dec.png" class="absolute right-0 -bottom-20 -z-50" alt="" />
+      <div class="container mx-auto">
         <div class="text-center">
-          <p class="subtitle">Our Services</p>
-          <h2 class="title"
-            >Provided <span class="text-[#dc8cdb]">Services</span></h2
-          >
+          <p class="subtitle">Testimonials</p>
+          <h2 class="title">What They <span class="text-[#dc8cdb]">Think</span></h2>
         </div>
-        <div class="mt-10">
-          <div class="owl-carousel-one owl-carousel owl-theme w-full">
-            <div class="service">
-              <img 
-                src="assets/images/service-icon-01.png"
-                class="mx-auto !w-auto"
-                alt=""
-              />
-              <h3 class="service-title">Useful Tricks</h3>
-              <p class="service-description"
-                >EduWell is the professional HTML5 template for your school or
-                university websites.</p
-              >
+        <div class="owl-carousel-two owl-carousel owl-theme flex">
+          <div class="testimonial">
+            <p class="testimonial-text">“Praesent accumsan condimentum arcu, id porttitor est semper
+              nec. Nunc diam lorem.”</p>
+            <div class="testimonial-entity">
+              <p class="testimonial-person">Maxi Power</p>
+              <span class="testimonial-function">Fashion Designer</span>
+              <img src="assets/images/quote.png" class="testimonial-quote" alt="Quote image" />
             </div>
-            <div class="service">
-              <img 
-                src="assets/images/service-icon-02.png"
-                class="mx-auto !w-auto"
-                alt=""
-              />
-              <h3 class="service-title">Creative Ideas</h3>
-              <p class="service-description"
-                >You can download and use this EduWell Template for your
-                teaching and learning stuffs.</p
-              >
+          </div>
+          <div class="testimonial">
+            <p class="testimonial-text">“Praesent accumsan condimentum arcu, id porttitor est semper
+              nec. Nunc diam lorem.”</p>
+            <div class="testimonial-entity">
+              <p class="testimonial-person">Andrew Hall</p>
+              <span class="testimonial-function">Marketing Manager</span>
+              <img src="assets/images/quote.png" class="testimonial-quote" alt="Quote image" />
             </div>
-            <div class="service">
-              <img 
-                src="assets/images/service-icon-03.png"
-                class="mx-auto !w-auto"
-                alt=""
-              />
-              <h3 class="service-title">Ready Target</h3>
-              <p class="service-description"
-                >Please tell your friends about the best CSS template website
-                that is TemplateMo.</p
-              >
+          </div>
+          <div class="testimonial">
+            <p class="testimonial-text">“Praesent accumsan condimentum arcu, id porttitor est semper
+              nec. Nunc diam lorem.”</p>
+            <div class="testimonial-entity">
+              <p class="testimonial-person">Helen Shiny</p>
+              <span class="testimonial-function">Tech Officer</span>
+              <img src="assets/images/quote.png" class="testimonial-quote" alt="Quote image" />
             </div>
-            <div class="service">
-              <img 
-                src="assets/images/service-icon-04.png"
-                class="mx-auto !w-auto"
-                alt=""
-              />
-              <h3 class="service-title">Useful Tricks</h3>
-              <p class="service-description"
-                >Aenean bibendum consectetur ex eu porttitor. Pellentesque id
-                ultrices metus.</p
-              >
+          </div>
+          <div class="testimonial">
+            <p class="testimonial-text">“Praesent accumsan condimentum arcu, id porttitor est semper
+              nec. Nunc diam lorem.”</p>
+            <div class="testimonial-entity">
+              <p class="testimonial-person">Olivia Too</p>
+              <span class="testimonial-function">Creative Designer</span>
+              <img src="assets/images/quote.png" class="testimonial-quote" alt="Quote image" />
             </div>
-            <div class="service">
-              <img 
-                src="assets/images/service-icon-01.png"
-                class="mx-auto !w-auto"
-                alt=""
-              />
-              <h3 class="service-title">Useful Tricks</h3>
-              <p class="service-description"
-                >EduWell is the professional HTML5 template for your school or
-                university websites.</p
-              >
+          </div>
+          <div class="testimonial">
+            <p class="testimonial-text">“Praesent accumsan condimentum arcu, id porttitor est semper
+              nec. Nunc diam lorem.”</p>
+            <div class="testimonial-entity">
+              <p class="testimonial-person">Catherine Walk</p>
+              <span class="testimonial-function">CEO & Founder</span>
+              <img src="assets/images/quote.png" class="testimonial-quote" alt="Quote image" />
             </div>
-            <div class="service">
-              <img 
-                src="assets/images/service-icon-02.png"
-                class="mx-auto !w-auto"
-                alt=""
-              />
-              <h3 class="service-title">Creative Ideas</h3>
-              <p class="service-description"
-                >You can download and use this EduWell Template for your
-                teaching and learning stuffs.</p
-              >
+          </div>
+          <div class="testimonial">
+            <p class="testimonial-text">“Praesent accumsan condimentum arcu, id porttitor est semper
+              nec. Nunc diam lorem.”</p>
+            <div class="testimonial-entity">
+              <p class="testimonial-person">David Martin</p>
+              <span class="testimonial-function">CTO of Tech Company</span>
+              <img src="assets/images/quote.png" class="testimonial-quote" alt="Quote image" />
             </div>
-            <div class="service">
-              <img 
-                src="assets/images/service-icon-03.png"
-                class="mx-auto !w-auto"
-                alt=""
-              />
-              <h3 class="service-title">Ready Target</h3>
-              <p class="service-description"
-                >Please tell your friends about the best CSS template website
-                that is TemplateMo.</p
-              >
-            </div>
-            <div class="service">
-              <img 
-                src="assets/images/service-icon-04.png"
-                class="mx-auto !w-auto"
-                alt=""
-              />
-              <h3 class="service-title">Useful Tricks</h3>
-              <p class="service-description"
-                >Aenean bibendum consectetur ex eu porttitor. Pellentesque id
-                ultrices metus.</p
-              >
-            </div>
-            <div class="service">
-              <img 
-                src="assets/images/service-icon-01.png"
-                class="mx-auto !w-auto"
-                alt=""
-              />
-              <h3 class="service-title">Useful Tricks</h3>
-              <p class="service-description"
-                >EduWell is the professional HTML5 template for your school or
-                university websites.</p
-              >
-            </div>
-            <div class="service">
-              <img 
-                src="assets/images/service-icon-02.png"
-                class="mx-auto !w-auto"
-                alt=""
-              />
-              <h3 class="service-title">Creative Ideas</h3>
-              <p class="service-description"
-                >You can download and use this EduWell Template for your
-                teaching and learning stuffs.</p
-              >
-            </div>
-            <div class="service">
-              <img 
-                src="assets/images/service-icon-03.png"
-                class="mx-auto !w-auto"
-                alt=""
-              />
-              <h3 class="service-title">Ready Target</h3>
-              <p class="service-description"
-                >Please tell your friends about the best CSS template website
-                that is TemplateMo.</p
-              >
-            </div>
-            <div class="service">
-              <img 
-                src="assets/images/service-icon-04.png"
-                class="mx-auto !w-auto"
-                alt=""
-              />
-              <h3 class="service-title">Useful Tricks</h3>
-              <p class="service-description"
-                >Aenean bibendum consectetur ex eu porttitor. Pellentesque id
-                ultrices metus.</p
-              >
-            </div>
-            <div class="service">
-              <img 
-                src="assets/images/service-icon-01.png"
-                class="mx-auto !w-auto"
-                alt=""
-              />
-              <h3 class="service-title">Useful Tricks</h3>
-              <p class="service-description"
-                >EduWell is the professional HTML5 template for your school or
-                university websites.</p
-              >
-            </div>
-            <div class="service">
-              <img 
-                src="assets/images/service-icon-02.png"
-                class="mx-auto !w-auto"
-                alt=""
-              />
-              <h3 class="service-title">Creative Ideas</h3>
-              <p class="service-description"
-                >You can download and use this EduWell Template for your
-                teaching and learning stuffs.</p
-              >
-            </div>
-            <div class="service">
-              <img 
-                src="assets/images/service-icon-03.png"
-                class="mx-auto !w-auto"
-                alt=""
-              />
-              <h3 class="service-title">Ready Target</h3>
-              <p class="service-description"
-                >Please tell your friends about the best CSS template website
-                that is TemplateMo.</p
-              >
-            </div>
-            <div class="service">
-              <img 
-                src="assets/images/service-icon-04.png"
-                class="mx-auto !w-auto"
-                alt=""
-              />
-              <h3 class="service-title">Useful Tricks</h3>
-              <p class="service-description"
-                >Aenean bibendum consectetur ex eu porttitor. Pellentesque id
-                ultrices metus.</p
-              >
+          </div>
+          <div class="testimonial">
+            <p class="testimonial-text">“Praesent accumsan condimentum arcu, id porttitor est semper
+              nec. Nunc diam lorem.”</p>
+            <div class="testimonial-entity">
+              <p class="testimonial-person">Sophia Whity</p>
+              <span class="testimonial-function">CEO and Co-Founder</span>
+              <img src="assets/images/quote.png" class="testimonial-quote" alt="Quote image" />
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- COURSES -->
-      <section
-        role="region"
-        aria-label="courses"
-        id="courses"
-        class="relative pt-24"
-      >
-        <img
-          src="assets/images/our-courses-left-dec.png"
-          class="absolute top-0 left-8 -z-50"
-          alt=""
-        />
-        <img
-          src="assets/images/our-courses-right-dec.png"
-          class="absolute top-0 right-8 -z-50"
-          alt=""
-        />
-        <div class="container mx-auto text-center mb-14">
-          <p class="subtitle">Our Courses</p>
-          <h2 class="title"
-            >What You Can <span class="text-[#dc8cdb]">Learn</span></h2
-          >
-          <p class="mt-8 px-20"
-            >You just think about TemplateMo whenever you need free CSS
-            templates for your business website</p
-          >
-        </div>
-        <div class="container mx-auto lg:flex gap-[100px] items-start">
-          <ul class="flex flex-col gap-10 items-center px-3">
-            <li class="courses-link course-link-active">Web Development</li>
-            <li class="courses-link">Graphic Design</li>
-            <li class="courses-link">Web Design</li>
-            <li class="courses-link">WordPress</li>
-          </ul>
-          <div id="courses">
-            <div class="course transition-all">
-              <div class="relative w-full self-center">
-                <span class="course-price">$128</span>
-                <img
-                  src="assets/images/courses-01.jpg"
-                  class="rounded-md md:rounded-r-none w-full"
-                  alt=""
-                />
-              </div>
-              <div class="course-info">
-                <h4 class="text-xl text-[#111] font-extrabold"
-                  >Web Development</h4
-                >
-                <p class="course-info-text"
-                  >Did you know that you can visit
-                  <a href="#">TooCSS website</a> for latest listing of HTML
-                  templates and a variety of useful templates.</p
-                >
-                <p class="course-info-text"
-                  >You just need to go and visit that website right now. IF you
-                  have any suggestion or comment about this template, you can
-                  feel free to go to contact page for our email address.</p
-                >
-                <div class="course-info-div-specifies">
-                  <p>36 Hours</p>
-                  |
-                  <p>4 Weeks</p>
-                  |
-                  <p>3 Certificates</p>
-                </div>
-                <a href="#" class="text-sm font-medium text-[#dc8cdb] link"
-                  >Subscribe Course</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- PROMOTION -->
-      <section
-        role="region"
-        class="py-10 2xl:py-0 my-28 lg:mt-44 bg-cta bg-no-repeat bg-center bg-cover"
-      >
-        <div
-          class="container mx-auto py-28 md:py-36 lg:py-24 px-4 flex flex-col lg:flex-row"
-        >
-          <div class="w-full mb-10 lg:w-fit lg:mx-10">
-            <img src="assets/images/cta-left-image.png" class="w-full" alt="A breafing meeting in a light office"/>
-          </div>
-          <div class="text-white">
-            <p>Get the sale right now!</p>
-            <h4 class="promotion font-black mt-5 xs:leading-[74px]"
-              >Up to 50% OFF For 1+ courses</h4
-            >
-            <p class="mt-8 mb-10 text-sm leading-6"
-              >Kogi VHS freegan bicycle rights try-hard green juice probably
-              haven't heard of them cliche la croix af chillwave.</p
-            >
-            <a href="#" class="alternative-button">View Courses</a>
-          </div>
-        </div>
-      </section>
-
-      <!-- TESTIMONIALS -->
-      <section
-        role="region"
-        aria-label="testimonials"
-        id="testimonials"
-        class="relative pt-24"
-      >
-        <img
-          src="assets/images/testimonials-left-dec.png"
-          class="absolute left-0 -top-14 -z-50"
-          alt=""
-        />
-        <img
-          src="assets/images/testimonials-right-dec.png"
-          class="absolute right-0 -bottom-20 -z-50"
-          alt=""
-        />
+    <!-- LOCATION / CONTACT / FORM / FOOTER -->
+    <section id="contact" class="bg-footer bg-no-repeat bg-center bg-cover pt-24">
+      <div class="container mx-auto lg:flex px-2 lg:px-5">
         <div class="container mx-auto">
-          <div class="text-center">
-            <p class="subtitle">Testimonials</p>
-            <h2 class="title"
-              >What They <span class="text-[#dc8cdb]">Think</span></h2
-            >
-          </div>
-          <div class="owl-carousel-two owl-carousel owl-theme flex">
-            <div class="testimonial">
-              <p class="testimonial-text"
-                >“Praesent accumsan condimentum arcu, id porttitor est semper
-                nec. Nunc diam lorem.”</p
-              >
-              <div class="testimonial-entity">
-                <p class="testimonial-person">Maxi Power</p>
-                <span class="testimonial-function">Fashion Designer</span>
-                <img src="assets/images/quote.png" class="testimonial-quote" alt="Quote image"/>
-              </div>
+          <!-- LOCATION -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2692.0802861641464!2d-122.19283858255613!3d47.5662263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490695e625f8965%3A0xf99b055e76477def!2sNewcastle%20Beach%20Park%20Playground%2C%20Bellevue%2C%20WA%2098006%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1657071553926!5m2!1spt-BR!2sbr"
+            width="100%" height="420px" style="border: 0" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" class="border-none rounded-2xl -z-10 relative"
+            title="EduWell fisic location" aria-label="EduWell fisic location"></iframe>
+
+          <!-- CONTACT -->
+          <aside aria-label="contact informations" class="lg:flex lg:ml-16 lg:-mt-10 gap-5 lg:w-max">
+            <div class="mt-[15px] p-5 bg-white shadow-base grid grid-cols-auto_2 rounded-2xl">
+              <img src="assets/images/quote.png" class="h-[50px] row-span-2 mr-4" alt="Quote image" />
+              <h4 class="text-lg font-black uppercase leading-tight">Phone</h4>
+              <p class="text-[15px] text-[#dc8cdb] font-bold">010-020-0340</p>
             </div>
-            <div class="testimonial">
-              <p class="testimonial-text"
-                >“Praesent accumsan condimentum arcu, id porttitor est semper
-                nec. Nunc diam lorem.”</p
-              >
-              <div class="testimonial-entity">
-                <p class="testimonial-person">Andrew Hall</p>
-                <span class="testimonial-function">Marketing Manager</span>
-                <img src="assets/images/quote.png" class="testimonial-quote" alt="Quote image"/>
-              </div>
+            <div class="mt-[15px] p-5 bg-white shadow-base grid grid-cols-auto_2 rounded-2xl">
+              <img src="assets/images/quote.png" class="h-[50px] row-span-2 mr-4" alt="Quote image" />
+              <h4 class="text-lg font-black uppercase leading-tight">Mobile</h4>
+              <p class="text-[15px] text-[#dc8cdb] font-bold">090-080-0760</p>
             </div>
-            <div class="testimonial">
-              <p class="testimonial-text"
-                >“Praesent accumsan condimentum arcu, id porttitor est semper
-                nec. Nunc diam lorem.”</p
-              >
-              <div class="testimonial-entity">
-                <p class="testimonial-person">Helen Shiny</p>
-                <span class="testimonial-function">Tech Officer</span>
-                <img src="assets/images/quote.png" class="testimonial-quote" alt="Quote image"/>
-              </div>
-            </div>
-            <div class="testimonial">
-              <p class="testimonial-text"
-                >“Praesent accumsan condimentum arcu, id porttitor est semper
-                nec. Nunc diam lorem.”</p
-              >
-              <div class="testimonial-entity">
-                <p class="testimonial-person">Olivia Too</p>
-                <span class="testimonial-function">Creative Designer</span>
-                <img src="assets/images/quote.png" class="testimonial-quote" alt="Quote image"/>
-              </div>
-            </div>
-            <div class="testimonial">
-              <p class="testimonial-text"
-                >“Praesent accumsan condimentum arcu, id porttitor est semper
-                nec. Nunc diam lorem.”</p
-              >
-              <div class="testimonial-entity">
-                <p class="testimonial-person">Catherine Walk</p>
-                <span class="testimonial-function">CEO & Founder</span>
-                <img src="assets/images/quote.png" class="testimonial-quote" alt="Quote image"/>
-              </div>
-            </div>
-            <div class="testimonial">
-              <p class="testimonial-text"
-                >“Praesent accumsan condimentum arcu, id porttitor est semper
-                nec. Nunc diam lorem.”</p
-              >
-              <div class="testimonial-entity">
-                <p class="testimonial-person">David Martin</p>
-                <span class="testimonial-function">CTO of Tech Company</span>
-                <img src="assets/images/quote.png" class="testimonial-quote" alt="Quote image"/>
-              </div>
-            </div>
-            <div class="testimonial">
-              <p class="testimonial-text"
-                >“Praesent accumsan condimentum arcu, id porttitor est semper
-                nec. Nunc diam lorem.”</p
-              >
-              <div class="testimonial-entity">
-                <p class="testimonial-person">Sophia Whity</p>
-                <span class="testimonial-function">CEO and Co-Founder</span>
-                <img src="assets/images/quote.png" class="testimonial-quote" alt="Quote image"/>
-              </div>
-            </div>
-          </div>
+          </aside>
         </div>
-      </section>
+        <div role="form" class="container mx-auto p-10 bg-white mt-10 rounded-2xl shadow-base lg:w-1/2 lg:-ml-[100px]">
+          <p class="subtitle">Contact Us</p>
+          <h2 class="title">Say <span class="text-[#dc8cdb]">Hello</span></h2>
+          <p class="mt-8 mb-10 text-sm leading-6 text-[#4a4a4a]">IF you need a working contact form by PHP script,
+            please visit
+            TemplateMo's contact page for more info</p>
 
-      <!-- LOCATION / CONTACT / FORM / FOOTER -->
-      <section
-        id="contact"
-        class="bg-footer bg-no-repeat bg-center bg-cover pt-24"
-      >
-        <div class="container mx-auto lg:flex px-2 lg:px-5">
-          <div class="container mx-auto">
-            <!-- LOCATION -->
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2692.0802861641464!2d-122.19283858255613!3d47.5662263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490695e625f8965%3A0xf99b055e76477def!2sNewcastle%20Beach%20Park%20Playground%2C%20Bellevue%2C%20WA%2098006%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1657071553926!5m2!1spt-BR!2sbr"
-              width="100%"
-              height="420px"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              class="border-none rounded-2xl -z-10 relative" title="EduWell fisic location"
-              aria-label="EduWell fisic location"
-            ></iframe>
+          <!-- FORM -->
+          <form>
+            <label for="name" class="sr-only">Full Name</label>
+            <input type="text" id="name" placeholder="Full Name"
+              class="w-full h-10 rounded-md bg-[#f4f7fb] outline-none text-sm font-medium text-[#7a7a7a] px-[15px] mb-8" />
+            <label for="email" class="sr-only">Your Email</label>
+            <input type="email" id="email" placeholder="Your Email"
+              class="w-full h-10 rounded-md bg-[#f4f7fb] outline-none text-sm font-medium text-[#7a7a7a] px-[15px] mb-8" />
+            <textarea name="message" id="message" placeholder="Your Message"
+              class="w-full min-h-[140px] max-h-[180px] rounded-md text-sm font-medium text-[#7a7a7a] bg-[#f4f7fb] p-[15px] mb-8"></textarea>
+            <button type="submit" class="button">Send Message</button>
+          </form>
+        </div>
+      </div>
 
-            <!-- CONTACT -->
-            <aside
-              aria-label="contact informations"
-              class="lg:flex lg:ml-16 lg:-mt-10 gap-5 lg:w-max"
-            >
-              <div
-                class="mt-[15px] p-5 bg-white shadow-base grid grid-cols-auto_2 rounded-2xl"
-              >
-                <img
-                  src="assets/images/quote.png"
-                  class="h-[50px] row-span-2 mr-4"
-                  alt="Quote image"
-                />
-                <h4 class="text-lg font-black uppercase leading-tight"
-                  >Phone</h4
-                >
-                <p class="text-[15px] text-[#dc8cdb] font-bold">010-020-0340</p>
-              </div>
-              <div
-                class="mt-[15px] p-5 bg-white shadow-base grid grid-cols-auto_2 rounded-2xl"
-              >
-                <img
-                  src="assets/images/quote.png"
-                  class="h-[50px] row-span-2 mr-4"
-                  alt="Quote image"
-                />
-                <h4 class="text-lg font-black uppercase leading-tight"
-                  >Mobile</h4
-                >
-                <p class="text-[15px] text-[#dc8cdb] font-bold">090-080-0760</p>
-              </div>
-            </aside>
+      <!-- FOOTER -->
+      <footer class="pb-10" role="contentinfo">
+        <!-- <img src="assets/images/footer-bg.png" class="absolute min-w-fit bottom-0 right-0 -z-50"> -->
+        <div class="container flex mx-auto w-fit mt-[70px]">
+          <div class="icon">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+              <title>facebook</title>
+              <path d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z"></path>
+            </svg>
           </div>
-          <div
-            role="form"
-            class="container mx-auto p-10 bg-white mt-10 rounded-2xl shadow-base lg:w-1/2 lg:-ml-[100px]"
-          >
-            <p class="subtitle">Contact Us</p>
-            <h2 class="title">Say <span class="text-[#dc8cdb]">Hello</span></h2>
-            <p class="mt-8 mb-10 text-sm leading-6 text-[#4a4a4a]"
-              >IF you need a working contact form by PHP script, please visit
-              TemplateMo's contact page for more info</p
-            >
-
-            <!-- FORM -->
-            <form>
-              <label for="name" class="sr-only">Full Name</label>
-              <input
-                type="text"
-                id="name"
-                placeholder="Full Name"
-                class="w-full h-10 rounded-md bg-[#f4f7fb] outline-none text-sm font-medium text-[#7a7a7a] px-[15px] mb-8"
-              />
-              <label for="email" class="sr-only">Your Email</label>
-              <input
-                type="email"
-                id="email"
-                placeholder="Your Email"
-                class="w-full h-10 rounded-md bg-[#f4f7fb] outline-none text-sm font-medium text-[#7a7a7a] px-[15px] mb-8"
-              />
-              <textarea
-                name="message"
-                id="message"
-                placeholder="Your Message"
-                class="w-full min-h-[140px] max-h-[180px] rounded-md text-sm font-medium text-[#7a7a7a] bg-[#f4f7fb] p-[15px] mb-8"
-              ></textarea>
-              <button type="submit" class="button">Send Message</button>
-            </form>
+          <div class="icon">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+              <title>twitter</title>
+              <path
+                d="M32 7.075c-1.175 0.525-2.444 0.875-3.769 1.031 1.356-0.813 2.394-2.1 2.887-3.631-1.269 0.75-2.675 1.3-4.169 1.594-1.2-1.275-2.906-2.069-4.794-2.069-3.625 0-6.563 2.938-6.563 6.563 0 0.512 0.056 1.012 0.169 1.494-5.456-0.275-10.294-2.888-13.531-6.862-0.563 0.969-0.887 2.1-0.887 3.3 0 2.275 1.156 4.287 2.919 5.463-1.075-0.031-2.087-0.331-2.975-0.819 0 0.025 0 0.056 0 0.081 0 3.181 2.263 5.838 5.269 6.437-0.55 0.15-1.131 0.231-1.731 0.231-0.425 0-0.831-0.044-1.237-0.119 0.838 2.606 3.263 4.506 6.131 4.563-2.25 1.762-5.075 2.813-8.156 2.813-0.531 0-1.050-0.031-1.569-0.094 2.913 1.869 6.362 2.95 10.069 2.95 12.075 0 18.681-10.006 18.681-18.681 0-0.287-0.006-0.569-0.019-0.85 1.281-0.919 2.394-2.075 3.275-3.394z">
+              </path>
+            </svg>
+          </div>
+          <div class="icon">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+              <title>linkedin2</title>
+              <path
+                d="M11.429 10.286h6.325v3.242h0.090c0.88-1.578 3.034-3.242 6.244-3.242 6.677 0 7.911 4.156 7.911 9.562v11.009h-6.593v-9.76c0-2.328-0.048-5.322-3.43-5.322-3.434 0-3.958 2.535-3.958 5.153v9.929h-6.591v-20.571z">
+              </path>
+              <path d="M0 10.286h6.857v20.571h-6.857v-20.571z"></path>
+              <path
+                d="M6.857 4.571c0 1.894-1.535 3.429-3.429 3.429s-3.429-1.535-3.429-3.429c0-1.894 1.535-3.429 3.429-3.429s3.429 1.535 3.429 3.429z">
+              </path>
+            </svg>
+          </div>
+          <div class="icon">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+              <title>rss</title>
+              <path
+                d="M4.259 23.467c-2.35 0-4.259 1.917-4.259 4.252 0 2.349 1.909 4.244 4.259 4.244 2.358 0 4.265-1.895 4.265-4.244-0-2.336-1.907-4.252-4.265-4.252zM0.005 10.873v6.133c3.993 0 7.749 1.562 10.577 4.391 2.825 2.822 4.384 6.595 4.384 10.603h6.16c-0-11.651-9.478-21.127-21.121-21.127zM0.012 0v6.136c14.243 0 25.836 11.604 25.836 25.864h6.152c0-17.64-14.352-32-31.988-32z">
+              </path>
+            </svg>
+          </div>
+          <div class="icon">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+              <title>dribbble</title>
+              <path
+                d="M16 32c-8.825 0-16-7.175-16-16s7.175-16 16-16c8.825 0 16 7.175 16 16s-7.175 16-16 16v0zM29.494 18.188c-0.469-0.15-4.231-1.269-8.512-0.581 1.788 4.912 2.512 8.912 2.656 9.744 3.063-2.075 5.25-5.356 5.856-9.163v0zM21.337 28.6c-0.206-1.2-0.994-5.375-2.913-10.363-0.031 0.012-0.063 0.019-0.087 0.031-7.713 2.688-10.481 8.031-10.725 8.531 2.319 1.806 5.231 2.887 8.387 2.887 1.894 0 3.7-0.387 5.338-1.087v0zM5.844 25.156c0.313-0.531 4.063-6.738 11.106-9.019 0.175-0.056 0.356-0.113 0.538-0.162-0.344-0.775-0.719-1.556-1.106-2.319-6.819 2.044-13.444 1.956-14.044 1.95-0.006 0.137-0.006 0.275-0.006 0.419 0 3.506 1.331 6.712 3.512 9.131v0zM2.625 13.219c0.612 0.006 6.244 0.031 12.637-1.662-2.262-4.025-4.706-7.412-5.069-7.906-3.825 1.806-6.688 5.331-7.569 9.569v0zM12.8 2.731c0.375 0.506 2.863 3.888 5.1 8 4.863-1.819 6.919-4.588 7.163-4.938-2.413-2.144-5.587-3.444-9.063-3.444-1.1 0.006-2.175 0.138-3.2 0.381v0zM26.581 7.381c-0.288 0.388-2.581 3.325-7.631 5.388 0.319 0.65 0.625 1.313 0.906 1.981 0.1 0.238 0.2 0.469 0.294 0.706 4.55-0.569 9.069 0.344 9.519 0.438-0.031-3.225-1.188-6.188-3.087-8.512v0z">
+              </path>
+            </svg>
           </div>
         </div>
 
-        <!-- FOOTER -->
-        <footer class="pb-10" role="contentinfo">
-          <!-- <img src="assets/images/footer-bg.png" class="absolute min-w-fit bottom-0 right-0 -z-50"> -->
-          <div class="container flex mx-auto w-fit mt-[70px]">
-            <div class="icon">
-              <svg
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
-                viewBox="0 0 32 32"
-              >
-                <title>facebook</title>
-                <path
-                  d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z"
-                ></path>
-              </svg>
-            </div>
-            <div class="icon">
-              <svg
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
-                viewBox="0 0 32 32"
-              >
-                <title>twitter</title>
-                <path
-                  d="M32 7.075c-1.175 0.525-2.444 0.875-3.769 1.031 1.356-0.813 2.394-2.1 2.887-3.631-1.269 0.75-2.675 1.3-4.169 1.594-1.2-1.275-2.906-2.069-4.794-2.069-3.625 0-6.563 2.938-6.563 6.563 0 0.512 0.056 1.012 0.169 1.494-5.456-0.275-10.294-2.888-13.531-6.862-0.563 0.969-0.887 2.1-0.887 3.3 0 2.275 1.156 4.287 2.919 5.463-1.075-0.031-2.087-0.331-2.975-0.819 0 0.025 0 0.056 0 0.081 0 3.181 2.263 5.838 5.269 6.437-0.55 0.15-1.131 0.231-1.731 0.231-0.425 0-0.831-0.044-1.237-0.119 0.838 2.606 3.263 4.506 6.131 4.563-2.25 1.762-5.075 2.813-8.156 2.813-0.531 0-1.050-0.031-1.569-0.094 2.913 1.869 6.362 2.95 10.069 2.95 12.075 0 18.681-10.006 18.681-18.681 0-0.287-0.006-0.569-0.019-0.85 1.281-0.919 2.394-2.075 3.275-3.394z"
-                ></path>
-              </svg>
-            </div>
-            <div class="icon">
-              <svg
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
-                viewBox="0 0 32 32"
-              >
-                <title>linkedin2</title>
-                <path
-                  d="M11.429 10.286h6.325v3.242h0.090c0.88-1.578 3.034-3.242 6.244-3.242 6.677 0 7.911 4.156 7.911 9.562v11.009h-6.593v-9.76c0-2.328-0.048-5.322-3.43-5.322-3.434 0-3.958 2.535-3.958 5.153v9.929h-6.591v-20.571z"
-                ></path>
-                <path d="M0 10.286h6.857v20.571h-6.857v-20.571z"></path>
-                <path
-                  d="M6.857 4.571c0 1.894-1.535 3.429-3.429 3.429s-3.429-1.535-3.429-3.429c0-1.894 1.535-3.429 3.429-3.429s3.429 1.535 3.429 3.429z"
-                ></path>
-              </svg>
-            </div>
-            <div class="icon">
-              <svg
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
-                viewBox="0 0 32 32"
-              >
-                <title>rss</title>
-                <path
-                  d="M4.259 23.467c-2.35 0-4.259 1.917-4.259 4.252 0 2.349 1.909 4.244 4.259 4.244 2.358 0 4.265-1.895 4.265-4.244-0-2.336-1.907-4.252-4.265-4.252zM0.005 10.873v6.133c3.993 0 7.749 1.562 10.577 4.391 2.825 2.822 4.384 6.595 4.384 10.603h6.16c-0-11.651-9.478-21.127-21.121-21.127zM0.012 0v6.136c14.243 0 25.836 11.604 25.836 25.864h6.152c0-17.64-14.352-32-31.988-32z"
-                ></path>
-              </svg>
-            </div>
-            <div class="icon">
-              <svg
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
-                viewBox="0 0 32 32"
-              >
-                <title>dribbble</title>
-                <path
-                  d="M16 32c-8.825 0-16-7.175-16-16s7.175-16 16-16c8.825 0 16 7.175 16 16s-7.175 16-16 16v0zM29.494 18.188c-0.469-0.15-4.231-1.269-8.512-0.581 1.788 4.912 2.512 8.912 2.656 9.744 3.063-2.075 5.25-5.356 5.856-9.163v0zM21.337 28.6c-0.206-1.2-0.994-5.375-2.913-10.363-0.031 0.012-0.063 0.019-0.087 0.031-7.713 2.688-10.481 8.031-10.725 8.531 2.319 1.806 5.231 2.887 8.387 2.887 1.894 0 3.7-0.387 5.338-1.087v0zM5.844 25.156c0.313-0.531 4.063-6.738 11.106-9.019 0.175-0.056 0.356-0.113 0.538-0.162-0.344-0.775-0.719-1.556-1.106-2.319-6.819 2.044-13.444 1.956-14.044 1.95-0.006 0.137-0.006 0.275-0.006 0.419 0 3.506 1.331 6.712 3.512 9.131v0zM2.625 13.219c0.612 0.006 6.244 0.031 12.637-1.662-2.262-4.025-4.706-7.412-5.069-7.906-3.825 1.806-6.688 5.331-7.569 9.569v0zM12.8 2.731c0.375 0.506 2.863 3.888 5.1 8 4.863-1.819 6.919-4.588 7.163-4.938-2.413-2.144-5.587-3.444-9.063-3.444-1.1 0.006-2.175 0.138-3.2 0.381v0zM26.581 7.381c-0.288 0.388-2.581 3.325-7.631 5.388 0.319 0.65 0.625 1.313 0.906 1.981 0.1 0.238 0.2 0.469 0.294 0.706 4.55-0.569 9.069 0.344 9.519 0.438-0.031-3.225-1.188-6.188-3.087-8.512v0z"
-                ></path>
-              </svg>
-            </div>
-          </div>
+        <p class="mt-10 text-center text-white text-sm leading-6">Copyright © 2022 EduWell Co., Ltd. All Rights
+          Reserved.
+          <br />
+          Design:
+          <span class="font-bold cursor-pointer link">TemplateMo</span>
+        </p>
+      </footer>
+    </section>
+  </main>
 
-          <p class="mt-10 text-center text-white text-sm leading-6"
-            >Copyright © 2022 EduWell Co., Ltd. All Rights Reserved.
-            <br />
-            Design:
-            <span class="font-bold cursor-pointer link">TemplateMo</span></p
-          >
-        </footer>
-      </section>
-    </main>
+  <h1 class="bg-black text-white text-4xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus dolores
+    optio explicabo deleniti molestias fugit.</h1>
 
-    <h1>hello</h1>
-  </body>
+</body>
+
 </html>
